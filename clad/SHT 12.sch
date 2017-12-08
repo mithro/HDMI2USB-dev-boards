@@ -1,0 +1,1056 @@
+EESchema Schematic File Version 2
+LIBS:CLAD-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CLAD-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7275 6850 0    150  ~ 30
+DDR3 MEMORY
+Text Notes 10375 7050 0    100  ~ 20
+12 OF 14
+$Comp
+L IS43TR16256A-125KBL IC22
+U 1 1 59F6B8D8
+P 5000 1950
+F 0 "IC22" H 3700 550 100 0000 C CNN
+F 1 "IS43TR16256A-125KBL" H 3900 250 100 0000 C CNN
+F 2 "" H 5000 1950 100 0000 C CNN
+F 3 "" H 5000 1950 100 0000 C CNN
+	1    5000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1350 4650 1450
+Wire Wire Line
+	2100 1350 4650 1350
+Wire Wire Line
+	2950 1350 2950 1450
+Wire Wire Line
+	3050 1350 3050 1450
+Connection ~ 3050 1350
+Wire Wire Line
+	3150 1350 3150 1450
+Connection ~ 3150 1350
+Wire Wire Line
+	3250 1350 3250 1450
+Connection ~ 3250 1350
+Wire Wire Line
+	3350 1450 3350 1350
+Connection ~ 3350 1350
+Wire Wire Line
+	3450 1450 3450 1350
+Connection ~ 3450 1350
+Wire Wire Line
+	3550 1450 3550 1350
+Connection ~ 3550 1350
+Wire Wire Line
+	3650 1450 3650 1350
+Connection ~ 3650 1350
+Wire Wire Line
+	3750 1450 3750 1350
+Connection ~ 3750 1350
+Wire Wire Line
+	3850 1450 3850 1350
+Connection ~ 3850 1350
+Wire Wire Line
+	3950 1450 3950 1350
+Connection ~ 3950 1350
+Wire Wire Line
+	4050 1450 4050 1350
+Connection ~ 4050 1350
+Wire Wire Line
+	4150 1450 4150 1350
+Connection ~ 4150 1350
+Wire Wire Line
+	4250 1450 4250 1350
+Connection ~ 4250 1350
+Wire Wire Line
+	4350 1450 4350 1350
+Connection ~ 4350 1350
+Wire Wire Line
+	4450 1450 4450 1350
+Connection ~ 4450 1350
+Wire Wire Line
+	4550 1450 4550 1350
+Connection ~ 4550 1350
+Wire Wire Line
+	2550 2050 2700 2050
+Wire Wire Line
+	2550 1650 2550 2050
+Wire Wire Line
+	2550 1950 2700 1950
+$Comp
+L C_Small C137
+U 1 1 59F6C260
+P 2100 1475
+F 0 "C137" H 2175 1550 50  0000 L CNN
+F 1 "10nF" H 2175 1475 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2275 1400 50  0001 C CNN
+F 3 "" H 2100 1475 50  0000 C CNN
+F 4 "Value" H 2100 1475 60  0001 C CNN "Fieldname"
+	1    2100 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C138
+U 1 1 59F6C323
+P 2100 1850
+F 0 "C138" H 2175 1925 50  0000 L CNN
+F 1 "10nF" H 2175 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2275 1775 50  0001 C CNN
+F 3 "" H 2100 1850 50  0000 C CNN
+F 4 "Value" H 2100 1850 60  0001 C CNN "Fieldname"
+	1    2100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F6C368
+P 2100 1950
+F 0 "#PWR?" H 2100 1700 50  0001 C CNN
+F 1 "GND" H 2100 1800 50  0000 C CNN
+F 2 "" H 2100 1950 50  0000 C CNN
+F 3 "" H 2100 1950 50  0000 C CNN
+	1    2100 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1575 2100 1750
+Wire Wire Line
+	2550 1650 2100 1650
+Connection ~ 2100 1650
+Connection ~ 2550 1950
+Wire Wire Line
+	2100 1575 1750 1575
+Wire Wire Line
+	2100 1350 2100 1375
+Connection ~ 2950 1350
+Connection ~ 2100 1575
+$Comp
+L VCC1V5 #PWR?
+U 1 1 59F6C4C1
+P 2100 1350
+F 0 "#PWR?" H 2100 1200 50  0001 C CNN
+F 1 "VCC1V5" H 2100 1500 50  0000 C CNN
+F 2 "" H 2100 1350 50  0000 C CNN
+F 3 "" H 2100 1350 50  0000 C CNN
+	1    2100 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2100 1350
+Text Notes 2175 1575 0    50   ~ 0
+CA BYP
+Text Notes 2175 1950 0    50   ~ 0
+DQ BYP
+Wire Wire Line
+	2850 5450 2850 5525
+Wire Wire Line
+	2850 5525 4850 5525
+Wire Wire Line
+	4850 5525 4850 5450
+Wire Wire Line
+	2950 5450 2950 5525
+Connection ~ 2950 5525
+Wire Wire Line
+	3050 5450 3050 5525
+Connection ~ 3050 5525
+Wire Wire Line
+	3150 5450 3150 5525
+Connection ~ 3150 5525
+Wire Wire Line
+	3250 5450 3250 5525
+Connection ~ 3250 5525
+Wire Wire Line
+	3350 5450 3350 5525
+Connection ~ 3350 5525
+Wire Wire Line
+	3450 5450 3450 5525
+Connection ~ 3450 5525
+Wire Wire Line
+	3550 5450 3550 5525
+Connection ~ 3550 5525
+Wire Wire Line
+	3650 5450 3650 5525
+Connection ~ 3650 5525
+Wire Wire Line
+	3750 5450 3750 5525
+Connection ~ 3750 5525
+Wire Wire Line
+	3850 5450 3850 5525
+Connection ~ 3850 5525
+Wire Wire Line
+	3950 5450 3950 5525
+Connection ~ 3950 5525
+Wire Wire Line
+	4050 5450 4050 5525
+Connection ~ 4050 5525
+Wire Wire Line
+	4150 5450 4150 5525
+Connection ~ 4150 5525
+Wire Wire Line
+	4250 5450 4250 5525
+Connection ~ 4250 5525
+Wire Wire Line
+	4350 5450 4350 5525
+Connection ~ 4350 5525
+Wire Wire Line
+	4450 5450 4450 5525
+Connection ~ 4450 5525
+Wire Wire Line
+	4550 5450 4550 5525
+Connection ~ 4550 5525
+Wire Wire Line
+	4650 5450 4650 5525
+Connection ~ 4650 5525
+Wire Wire Line
+	4750 5450 4750 5525
+Connection ~ 4750 5525
+$Comp
+L GND #PWR?
+U 1 1 59F6DA31
+P 2850 5525
+F 0 "#PWR?" H 2850 5275 50  0001 C CNN
+F 1 "GND" H 2850 5375 50  0000 C CNN
+F 2 "" H 2850 5525 50  0000 C CNN
+F 3 "" H 2850 5525 50  0000 C CNN
+	1    2850 5525
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 5525
+Wire Wire Line
+	2700 2350 1900 2350
+Wire Wire Line
+	2700 2450 1900 2450
+Wire Wire Line
+	2700 2550 1900 2550
+Wire Wire Line
+	2700 2650 1900 2650
+Wire Wire Line
+	2700 2750 1900 2750
+Wire Wire Line
+	1900 2850 2700 2850
+Wire Wire Line
+	2700 2950 1900 2950
+Wire Wire Line
+	2700 3050 1900 3050
+Wire Wire Line
+	2700 3150 1900 3150
+Wire Wire Line
+	2700 3250 1900 3250
+Wire Wire Line
+	2700 3350 1900 3350
+Wire Wire Line
+	2700 3450 1900 3450
+Wire Wire Line
+	1900 3550 2700 3550
+Wire Wire Line
+	2700 3650 1900 3650
+Wire Wire Line
+	2700 3750 1900 3750
+Wire Wire Line
+	2700 3950 1900 3950
+Wire Wire Line
+	2700 4050 1900 4050
+Wire Wire Line
+	2700 4150 1900 4150
+Wire Wire Line
+	2700 4350 1900 4350
+Wire Wire Line
+	2700 4450 1900 4450
+Wire Wire Line
+	2700 4550 1900 4550
+Wire Wire Line
+	2700 4750 1900 4750
+Wire Wire Line
+	2700 4850 1900 4850
+Wire Wire Line
+	1900 4950 2700 4950
+Wire Wire Line
+	2700 5050 1900 5050
+Wire Wire Line
+	5800 1950 5000 1950
+Wire Wire Line
+	5800 2050 5000 2050
+Wire Wire Line
+	5800 2150 5000 2150
+Wire Wire Line
+	5800 2250 5000 2250
+Wire Wire Line
+	5800 2350 5000 2350
+Wire Wire Line
+	5800 2450 5000 2450
+Wire Wire Line
+	5000 2550 5800 2550
+Wire Wire Line
+	5800 2650 5000 2650
+Wire Wire Line
+	5800 2750 5000 2750
+Wire Wire Line
+	5800 2850 5000 2850
+Wire Wire Line
+	5800 2950 5000 2950
+Wire Wire Line
+	5800 3050 5000 3050
+Wire Wire Line
+	5800 3150 5000 3150
+Wire Wire Line
+	5000 3250 5800 3250
+Wire Wire Line
+	5800 3350 5000 3350
+Wire Wire Line
+	5800 3450 5000 3450
+Wire Wire Line
+	5800 3950 5000 3950
+Wire Wire Line
+	5800 3850 5000 3850
+Wire Wire Line
+	5800 4050 5000 4050
+Wire Wire Line
+	5800 4150 5000 4150
+Wire Wire Line
+	5800 4350 5000 4350
+Wire Wire Line
+	5800 4450 5000 4450
+Wire Wire Line
+	5550 4950 5000 4950
+Wire Wire Line
+	5000 4650 5800 4650
+Wire Wire Line
+	5000 5050 5800 5050
+Text HLabel 5800 3450 2    60   Output ~ 0
+DDR3_D0
+Text HLabel 5800 3350 2    60   Output ~ 0
+DDR3_D1
+Text HLabel 5800 3250 2    60   Output ~ 0
+DDR3_D2
+Text HLabel 5800 3150 2    60   Output ~ 0
+DDR3_D3
+Text HLabel 5800 3050 2    60   Output ~ 0
+DDR3_D4
+Text HLabel 5800 2950 2    60   Output ~ 0
+DDR3_D5
+Text HLabel 5800 2850 2    60   Output ~ 0
+DDR3_D6
+Text HLabel 5800 2750 2    60   Output ~ 0
+DDR3_D7
+Text HLabel 5800 2650 2    60   Output ~ 0
+DDR3_D8
+Text HLabel 5800 2550 2    60   Output ~ 0
+DDR3_D9
+Text HLabel 5800 2450 2    60   Output ~ 0
+DDR3_D10
+Text HLabel 5800 2350 2    60   Output ~ 0
+DDR3_D11
+Text HLabel 5800 2250 2    60   Output ~ 0
+DDR3_D12
+Text HLabel 5800 2150 2    60   Output ~ 0
+DDR3_D13
+Text HLabel 5800 2050 2    60   Output ~ 0
+DDR3_D14
+Text HLabel 5800 1950 2    60   Output ~ 0
+DDR3_D15
+Text HLabel 5800 3850 2    60   Output ~ 0
+DDR3_DQS1_P
+Text HLabel 5800 3950 2    60   Output ~ 0
+DDR3_DQS1_N
+Text HLabel 5800 4050 2    60   Output ~ 0
+DDR3_DQS0_P
+Text HLabel 5800 4150 2    60   Output ~ 0
+DDR3_DQS0_N
+Text HLabel 5800 4350 2    60   Output ~ 0
+DDR3_DM0
+Text HLabel 5800 4450 2    60   Output ~ 0
+DDR3_DM1
+Text HLabel 5800 4650 2    60   Output ~ 0
+DDR3_ODT0
+$Comp
+L R R250
+U 1 1 59F6EE83
+P 5250 5250
+F 0 "R250" H 5400 5325 50  0000 C CNN
+F 1 "4.7K" H 5400 5225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 5300 5175 50  0001 L CNN
+F 3 "" H 5250 5250 50  0000 C CNN
+F 4 "Value" H 5250 5250 60  0001 C CNN "Fieldname"
+	1    5250 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R251
+U 1 1 59F6EF08
+P 5550 5250
+F 0 "R251" H 5700 5325 50  0000 C CNN
+F 1 "240" H 5700 5225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 5600 5175 50  0001 L CNN
+F 3 "" H 5550 5250 50  0000 C CNN
+F 4 "Value" H 5550 5250 60  0001 C CNN "Fieldname"
+F 5 "1%" H 5700 5125 60  0000 C CNN "PERCENTAGE"
+	1    5550 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5050 5250 5100
+Wire Wire Line
+	5550 4950 5550 5100
+$Comp
+L GND #PWR?
+U 1 1 59F6F0B6
+P 5250 5525
+F 0 "#PWR?" H 5250 5275 50  0001 C CNN
+F 1 "GND" H 5250 5375 50  0000 C CNN
+F 2 "" H 5250 5525 50  0000 C CNN
+F 3 "" H 5250 5525 50  0000 C CNN
+	1    5250 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F6F0D0
+P 5550 5525
+F 0 "#PWR?" H 5550 5275 50  0001 C CNN
+F 1 "GND" H 5550 5375 50  0000 C CNN
+F 2 "" H 5550 5525 50  0000 C CNN
+F 3 "" H 5550 5525 50  0000 C CNN
+	1    5550 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5525 5250 5400
+Wire Wire Line
+	5550 5525 5550 5400
+Text HLabel 1900 3750 0    60   Input ~ 0
+DDR3_A0
+Text HLabel 1900 3650 0    60   Input ~ 0
+DDR3_A1
+Text HLabel 1900 3550 0    60   Input ~ 0
+DDR3_A2
+Text HLabel 1900 3450 0    60   Input ~ 0
+DDR3_A3
+Text HLabel 1900 3350 0    60   Input ~ 0
+DDR3_A4
+Text HLabel 1900 3250 0    60   Input ~ 0
+DDR3_A5
+Text HLabel 1900 3150 0    60   Input ~ 0
+DDR3_A6
+Text HLabel 1900 3050 0    60   Input ~ 0
+DDR3_A7
+Text HLabel 1900 2950 0    60   Input ~ 0
+DDR3_A8
+Text HLabel 1900 2850 0    60   Input ~ 0
+DDR3_A9
+Text HLabel 1900 2750 0    60   Input ~ 0
+DDR3_A10
+Text HLabel 1900 2650 0    60   Input ~ 0
+DDR3_A11
+Text HLabel 1900 2550 0    60   Input ~ 0
+DDR3_A12
+Text HLabel 1900 2450 0    60   Input ~ 0
+DDR3_A13
+Text HLabel 1900 2350 0    60   Input ~ 0
+DDR3_A14
+Text HLabel 1900 3950 0    60   Input ~ 0
+DDR3_BA0
+Text HLabel 1900 4050 0    60   Input ~ 0
+DDR3_BA1
+Text HLabel 1900 4150 0    60   Input ~ 0
+DDR3_BA2
+Text HLabel 1900 4350 0    60   Input ~ 0
+DDR3_CK_P
+Text HLabel 1900 4450 0    60   Input ~ 0
+DDR3_CK_N
+Text HLabel 1900 4550 0    60   Input ~ 0
+DDR3_CKE0
+Text HLabel 1900 4750 0    60   Input ~ 0
+DDR3_CS
+Text HLabel 1900 4850 0    60   Input ~ 0
+DDR3_RAS
+Text HLabel 1900 4950 0    60   Input ~ 0
+DDR3_CAS
+Text HLabel 1900 5050 0    60   Input ~ 0
+DDR3_WE
+Connection ~ 5250 5050
+Text HLabel 5800 5050 2    60   Output ~ 0
+DDR3_RESET
+$Comp
+L C_Small C139
+U 1 1 59F71479
+P 7400 2400
+F 0 "C139" H 7475 2475 50  0000 L CNN
+F 1 "47nF" H 7475 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7575 2325 50  0001 C CNN
+F 3 "" H 7400 2400 50  0000 C CNN
+F 4 "Value" H 7400 2400 60  0001 C CNN "Fieldname"
+	1    7400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C140
+U 1 1 59F71559
+P 7800 2400
+F 0 "C140" H 7875 2475 50  0000 L CNN
+F 1 "47nF" H 7875 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7975 2325 50  0001 C CNN
+F 3 "" H 7800 2400 50  0000 C CNN
+F 4 "Value" H 7800 2400 60  0001 C CNN "Fieldname"
+	1    7800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C141
+U 1 1 59F71686
+P 8200 2400
+F 0 "C141" H 8275 2475 50  0000 L CNN
+F 1 "47nF" H 8275 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8375 2325 50  0001 C CNN
+F 3 "" H 8200 2400 50  0000 C CNN
+F 4 "Value" H 8200 2400 60  0001 C CNN "Fieldname"
+	1    8200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C142
+U 1 1 59F7168D
+P 8600 2400
+F 0 "C142" H 8675 2475 50  0000 L CNN
+F 1 "47nF" H 8675 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8775 2325 50  0001 C CNN
+F 3 "" H 8600 2400 50  0000 C CNN
+F 4 "Value" H 8600 2400 60  0001 C CNN "Fieldname"
+	1    8600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C143
+U 1 1 59F717EA
+P 9000 2400
+F 0 "C143" H 9075 2475 50  0000 L CNN
+F 1 "47nF" H 9075 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9175 2325 50  0001 C CNN
+F 3 "" H 9000 2400 50  0000 C CNN
+F 4 "Value" H 9000 2400 60  0001 C CNN "Fieldname"
+	1    9000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C144
+U 1 1 59F717F1
+P 9400 2400
+F 0 "C144" H 9475 2475 50  0000 L CNN
+F 1 "47nF" H 9475 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9575 2325 50  0001 C CNN
+F 3 "" H 9400 2400 50  0000 C CNN
+F 4 "Value" H 9400 2400 60  0001 C CNN "Fieldname"
+	1    9400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C145
+U 1 1 59F717F8
+P 9800 2400
+F 0 "C145" H 9875 2475 50  0000 L CNN
+F 1 "47nF" H 9875 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9975 2325 50  0001 C CNN
+F 3 "" H 9800 2400 50  0000 C CNN
+F 4 "Value" H 9800 2400 60  0001 C CNN "Fieldname"
+	1    9800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C146
+U 1 1 59F717FF
+P 10200 2400
+F 0 "C146" H 10275 2475 50  0000 L CNN
+F 1 "47nF" H 10275 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10375 2325 50  0001 C CNN
+F 3 "" H 10200 2400 50  0000 C CNN
+F 4 "Value" H 10200 2400 60  0001 C CNN "Fieldname"
+	1    10200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71980
+P 7400 2500
+F 0 "#PWR?" H 7400 2250 50  0001 C CNN
+F 1 "GND" H 7400 2350 50  0000 C CNN
+F 2 "" H 7400 2500 50  0000 C CNN
+F 3 "" H 7400 2500 50  0000 C CNN
+	1    7400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F719AE
+P 7800 2500
+F 0 "#PWR?" H 7800 2250 50  0001 C CNN
+F 1 "GND" H 7800 2350 50  0000 C CNN
+F 2 "" H 7800 2500 50  0000 C CNN
+F 3 "" H 7800 2500 50  0000 C CNN
+	1    7800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F719DC
+P 8200 2500
+F 0 "#PWR?" H 8200 2250 50  0001 C CNN
+F 1 "GND" H 8200 2350 50  0000 C CNN
+F 2 "" H 8200 2500 50  0000 C CNN
+F 3 "" H 8200 2500 50  0000 C CNN
+	1    8200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71A0A
+P 8600 2500
+F 0 "#PWR?" H 8600 2250 50  0001 C CNN
+F 1 "GND" H 8600 2350 50  0000 C CNN
+F 2 "" H 8600 2500 50  0000 C CNN
+F 3 "" H 8600 2500 50  0000 C CNN
+	1    8600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71A38
+P 9000 2500
+F 0 "#PWR?" H 9000 2250 50  0001 C CNN
+F 1 "GND" H 9000 2350 50  0000 C CNN
+F 2 "" H 9000 2500 50  0000 C CNN
+F 3 "" H 9000 2500 50  0000 C CNN
+	1    9000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71A66
+P 9400 2500
+F 0 "#PWR?" H 9400 2250 50  0001 C CNN
+F 1 "GND" H 9400 2350 50  0000 C CNN
+F 2 "" H 9400 2500 50  0000 C CNN
+F 3 "" H 9400 2500 50  0000 C CNN
+	1    9400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71A94
+P 9800 2500
+F 0 "#PWR?" H 9800 2250 50  0001 C CNN
+F 1 "GND" H 9800 2350 50  0000 C CNN
+F 2 "" H 9800 2500 50  0000 C CNN
+F 3 "" H 9800 2500 50  0000 C CNN
+	1    9800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71AC2
+P 10200 2500
+F 0 "#PWR?" H 10200 2250 50  0001 C CNN
+F 1 "GND" H 10200 2350 50  0000 C CNN
+F 2 "" H 10200 2500 50  0000 C CNN
+F 3 "" H 10200 2500 50  0000 C CNN
+	1    10200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C147
+U 1 1 59F71BA4
+P 7400 3200
+F 0 "C147" H 7475 3275 50  0000 L CNN
+F 1 "47nF" H 7475 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7575 3125 50  0001 C CNN
+F 3 "" H 7400 3200 50  0000 C CNN
+F 4 "Value" H 7400 3200 60  0001 C CNN "Fieldname"
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C148
+U 1 1 59F71BAB
+P 7800 3200
+F 0 "C148" H 7875 3275 50  0000 L CNN
+F 1 "47nF" H 7875 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7975 3125 50  0001 C CNN
+F 3 "" H 7800 3200 50  0000 C CNN
+F 4 "Value" H 7800 3200 60  0001 C CNN "Fieldname"
+	1    7800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C149
+U 1 1 59F71BB2
+P 8200 3200
+F 0 "C149" H 8275 3275 50  0000 L CNN
+F 1 "47nF" H 8275 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8375 3125 50  0001 C CNN
+F 3 "" H 8200 3200 50  0000 C CNN
+F 4 "Value" H 8200 3200 60  0001 C CNN "Fieldname"
+	1    8200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C150
+U 1 1 59F71BB9
+P 8600 3200
+F 0 "C150" H 8675 3275 50  0000 L CNN
+F 1 "47nF" H 8675 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8775 3125 50  0001 C CNN
+F 3 "" H 8600 3200 50  0000 C CNN
+F 4 "Value" H 8600 3200 60  0001 C CNN "Fieldname"
+	1    8600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C151
+U 1 1 59F71BC0
+P 9000 3200
+F 0 "C151" H 9075 3275 50  0000 L CNN
+F 1 "47nF" H 9075 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9175 3125 50  0001 C CNN
+F 3 "" H 9000 3200 50  0000 C CNN
+F 4 "Value" H 9000 3200 60  0001 C CNN "Fieldname"
+	1    9000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C152
+U 1 1 59F71BC7
+P 9400 3200
+F 0 "C152" H 9475 3275 50  0000 L CNN
+F 1 "47nF" H 9475 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9575 3125 50  0001 C CNN
+F 3 "" H 9400 3200 50  0000 C CNN
+F 4 "Value" H 9400 3200 60  0001 C CNN "Fieldname"
+	1    9400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C153
+U 1 1 59F71BCE
+P 9800 3200
+F 0 "C153" H 9875 3275 50  0000 L CNN
+F 1 "47nF" H 9875 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9975 3125 50  0001 C CNN
+F 3 "" H 9800 3200 50  0000 C CNN
+F 4 "Value" H 9800 3200 60  0001 C CNN "Fieldname"
+	1    9800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C154
+U 1 1 59F71BD5
+P 10200 3200
+F 0 "C154" H 10275 3275 50  0000 L CNN
+F 1 "47nF" H 10275 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10375 3125 50  0001 C CNN
+F 3 "" H 10200 3200 50  0000 C CNN
+F 4 "Value" H 10200 3200 60  0001 C CNN "Fieldname"
+	1    10200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71BDB
+P 7400 3300
+F 0 "#PWR?" H 7400 3050 50  0001 C CNN
+F 1 "GND" H 7400 3150 50  0000 C CNN
+F 2 "" H 7400 3300 50  0000 C CNN
+F 3 "" H 7400 3300 50  0000 C CNN
+	1    7400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71BE1
+P 7800 3300
+F 0 "#PWR?" H 7800 3050 50  0001 C CNN
+F 1 "GND" H 7800 3150 50  0000 C CNN
+F 2 "" H 7800 3300 50  0000 C CNN
+F 3 "" H 7800 3300 50  0000 C CNN
+	1    7800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71BE7
+P 8200 3300
+F 0 "#PWR?" H 8200 3050 50  0001 C CNN
+F 1 "GND" H 8200 3150 50  0000 C CNN
+F 2 "" H 8200 3300 50  0000 C CNN
+F 3 "" H 8200 3300 50  0000 C CNN
+	1    8200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71BED
+P 8600 3300
+F 0 "#PWR?" H 8600 3050 50  0001 C CNN
+F 1 "GND" H 8600 3150 50  0000 C CNN
+F 2 "" H 8600 3300 50  0000 C CNN
+F 3 "" H 8600 3300 50  0000 C CNN
+	1    8600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71BF3
+P 9000 3300
+F 0 "#PWR?" H 9000 3050 50  0001 C CNN
+F 1 "GND" H 9000 3150 50  0000 C CNN
+F 2 "" H 9000 3300 50  0000 C CNN
+F 3 "" H 9000 3300 50  0000 C CNN
+	1    9000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71BF9
+P 9400 3300
+F 0 "#PWR?" H 9400 3050 50  0001 C CNN
+F 1 "GND" H 9400 3150 50  0000 C CNN
+F 2 "" H 9400 3300 50  0000 C CNN
+F 3 "" H 9400 3300 50  0000 C CNN
+	1    9400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71BFF
+P 9800 3300
+F 0 "#PWR?" H 9800 3050 50  0001 C CNN
+F 1 "GND" H 9800 3150 50  0000 C CNN
+F 2 "" H 9800 3300 50  0000 C CNN
+F 3 "" H 9800 3300 50  0000 C CNN
+	1    9800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71C05
+P 10200 3300
+F 0 "#PWR?" H 10200 3050 50  0001 C CNN
+F 1 "GND" H 10200 3150 50  0000 C CNN
+F 2 "" H 10200 3300 50  0000 C CNN
+F 3 "" H 10200 3300 50  0000 C CNN
+	1    10200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C155
+U 1 1 59F71C75
+P 7400 4000
+F 0 "C155" H 7475 4075 50  0000 L CNN
+F 1 "47nF" H 7475 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7575 3925 50  0001 C CNN
+F 3 "" H 7400 4000 50  0000 C CNN
+F 4 "Value" H 7400 4000 60  0001 C CNN "Fieldname"
+	1    7400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C156
+U 1 1 59F71C7C
+P 7800 4000
+F 0 "C156" H 7875 4075 50  0000 L CNN
+F 1 "47nF" H 7875 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7975 3925 50  0001 C CNN
+F 3 "" H 7800 4000 50  0000 C CNN
+F 4 "Value" H 7800 4000 60  0001 C CNN "Fieldname"
+	1    7800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C157
+U 1 1 59F71C83
+P 8200 4000
+F 0 "C157" H 8275 4075 50  0000 L CNN
+F 1 "47nF" H 8275 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8375 3925 50  0001 C CNN
+F 3 "" H 8200 4000 50  0000 C CNN
+F 4 "Value" H 8200 4000 60  0001 C CNN "Fieldname"
+	1    8200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71C89
+P 7400 4100
+F 0 "#PWR?" H 7400 3850 50  0001 C CNN
+F 1 "GND" H 7400 3950 50  0000 C CNN
+F 2 "" H 7400 4100 50  0000 C CNN
+F 3 "" H 7400 4100 50  0000 C CNN
+	1    7400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71C8F
+P 7800 4100
+F 0 "#PWR?" H 7800 3850 50  0001 C CNN
+F 1 "GND" H 7800 3950 50  0000 C CNN
+F 2 "" H 7800 4100 50  0000 C CNN
+F 3 "" H 7800 4100 50  0000 C CNN
+	1    7800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F71C95
+P 8200 4100
+F 0 "#PWR?" H 8200 3850 50  0001 C CNN
+F 1 "GND" H 8200 3950 50  0000 C CNN
+F 2 "" H 8200 4100 50  0000 C CNN
+F 3 "" H 8200 4100 50  0000 C CNN
+	1    8200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC1V5 #PWR?
+U 1 1 59F731B5
+P 7400 2200
+F 0 "#PWR?" H 7400 2050 50  0001 C CNN
+F 1 "VCC1V5" H 7400 2350 50  0000 C CNN
+F 2 "" H 7400 2200 50  0000 C CNN
+F 3 "" H 7400 2200 50  0000 C CNN
+	1    7400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC1V5 #PWR?
+U 1 1 59F731F9
+P 7400 3000
+F 0 "#PWR?" H 7400 2850 50  0001 C CNN
+F 1 "VCC1V5" H 7400 3150 50  0000 C CNN
+F 2 "" H 7400 3000 50  0000 C CNN
+F 3 "" H 7400 3000 50  0000 C CNN
+	1    7400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC1V5 #PWR?
+U 1 1 59F7323D
+P 7400 3800
+F 0 "#PWR?" H 7400 3650 50  0001 C CNN
+F 1 "VCC1V5" H 7400 3950 50  0000 C CNN
+F 2 "" H 7400 3800 50  0000 C CNN
+F 3 "" H 7400 3800 50  0000 C CNN
+	1    7400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2200 10200 2300
+Wire Wire Line
+	7400 2200 10200 2200
+Wire Wire Line
+	7400 2200 7400 2300
+Wire Wire Line
+	7800 2300 7800 2200
+Connection ~ 7800 2200
+Wire Wire Line
+	8200 2300 8200 2200
+Connection ~ 8200 2200
+Wire Wire Line
+	8600 2300 8600 2200
+Connection ~ 8600 2200
+Wire Wire Line
+	9000 2300 9000 2200
+Connection ~ 9000 2200
+Wire Wire Line
+	9400 2300 9400 2200
+Connection ~ 9400 2200
+Wire Wire Line
+	9800 2300 9800 2200
+Connection ~ 9800 2200
+Wire Wire Line
+	10200 3000 10200 3100
+Wire Wire Line
+	7400 3000 10200 3000
+Wire Wire Line
+	7400 3000 7400 3100
+Wire Wire Line
+	7800 3000 7800 3100
+Connection ~ 7800 3000
+Wire Wire Line
+	8200 3000 8200 3100
+Connection ~ 8200 3000
+Wire Wire Line
+	8600 3000 8600 3100
+Connection ~ 8600 3000
+Wire Wire Line
+	9000 3000 9000 3100
+Connection ~ 9000 3000
+Wire Wire Line
+	9400 3000 9400 3100
+Connection ~ 9400 3000
+Wire Wire Line
+	9800 3000 9800 3100
+Connection ~ 9800 3000
+Wire Wire Line
+	8200 3800 8200 3900
+Wire Wire Line
+	7400 3800 8200 3800
+Wire Wire Line
+	7400 3800 7400 3900
+Wire Wire Line
+	7800 3900 7800 3800
+Connection ~ 7800 3800
+Connection ~ 7400 3800
+Connection ~ 7400 3000
+Connection ~ 7400 2200
+$Comp
+L DDR3_VREF #PWR?
+U 1 1 5A2F88C5
+P 1750 1575
+F 0 "#PWR?" H 1750 1425 50  0001 C CNN
+F 1 "DDR3_VREF" H 1750 1725 50  0000 C CNN
+F 2 "" H 1750 1575 50  0000 C CNN
+F 3 "" H 1750 1575 50  0000 C CNN
+	1    1750 1575
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2700 2250
+$EndSCHEMATC

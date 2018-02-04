@@ -1,5 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:ZVZNF-cache
+LIBS:ZVZNF-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:ZVZNF-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -93,9 +94,7 @@ F 3 "" H 3900 3925 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 2525 4350 2525
-Wire Wire Line
-	4350 2525 4400 2525
+	3250 2525 4400 2525
 Text Label 3350 2525 0    60   ~ 12
 MCLR
 $Comp
@@ -153,21 +152,15 @@ F 3 "" H 3650 2825 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 2625 3450 2625
+	3150 2625 4400 2625
 Wire Wire Line
-	3450 2625 4400 2625
-Wire Wire Line
-	3450 2625 3450 2825
-Wire Wire Line
-	3450 2825 3450 3025
+	3450 2625 3450 3025
 Wire Wire Line
 	3450 2825 3550 2825
 Wire Wire Line
 	4400 2725 3900 2725
 Wire Wire Line
-	3900 2725 3900 2825
-Wire Wire Line
-	3900 2825 3900 3025
+	3900 2725 3900 3025
 Wire Wire Line
 	3900 2825 3750 2825
 $Comp
@@ -238,26 +231,22 @@ MCLK
 Wire Wire Line
 	4400 3725 3900 3725
 Wire Wire Line
-	3700 3625 3700 3725
+	3700 3625 3700 4775
 Wire Wire Line
-	3700 3725 3700 4775
-Wire Wire Line
-	3450 3525 3450 3825
-Wire Wire Line
-	3450 3825 3450 4675
+	3450 4875 3450 3525
 $Comp
 L USB_OTG X1
 U 1 1 5A03A2B0
 P 2650 4775
+AR Path="/5A03A2B0" Ref="X1"  Part="1" 
+AR Path="/5A037A9C/5A03A2B0" Ref="X1"  Part="1" 
 F 0 "X1" V 2950 4875 50  0000 C CNN
 F 1 "USB_OTG" H 2650 4975 50  0001 C CNN
 F 2 "" V 2600 4675 50  0000 C CNN
 F 3 "" V 2600 4675 50  0000 C CNN
 	1    2650 4775
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 4675 2950 4675
 Wire Wire Line
 	3700 4775 2950 4775
 $Comp
@@ -299,7 +288,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 3525 4400 3525
 Wire Wire Line
-	2900 3425 3250 3425
+	3250 3425 2900 3425
 Connection ~ 3250 2525
 $Comp
 L VCCAUX #PWR?
@@ -334,34 +323,16 @@ $EndComp
 $Comp
 L GND #PWR?
 U 1 1 5A03BBFF
-P 2550 5175
-F 0 "#PWR?" H 2550 4925 50  0001 C CNN
-F 1 "GND" H 2550 5025 50  0000 C CNN
-F 2 "" H 2550 5175 50  0000 C CNN
-F 3 "" H 2550 5175 50  0000 C CNN
-	1    2550 5175
+P 2600 5200
+F 0 "#PWR?" H 2600 4950 50  0001 C CNN
+F 1 "GND" H 2600 5050 50  0000 C CNN
+F 2 "" H 2600 5200 50  0000 C CNN
+F 3 "" H 2600 5200 50  0000 C CNN
+	1    2600 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 4875 3000 4875
-Wire Wire Line
-	3000 4875 3000 4975
-Wire Wire Line
-	3000 4975 3000 5175
-Wire Wire Line
-	2950 4975 3000 4975
-Connection ~ 3000 4975
-$Comp
-L GND #PWR?
-U 1 1 5A03BCA9
-P 3000 5175
-F 0 "#PWR?" H 3000 4925 50  0001 C CNN
-F 1 "GND" H 3000 5025 50  0000 C CNN
-F 2 "" H 3000 5175 50  0000 C CNN
-F 3 "" H 3000 5175 50  0000 C CNN
-	1    3000 5175
-	1    0    0    -1  
-$EndComp
+	2950 4875 3450 4875
 $Comp
 L CONN_01X02 P3
 U 1 1 5A03C17F
@@ -375,11 +346,9 @@ F 4 "Value" H 2700 2325 60  0001 C CNN "Fieldname"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 2225 3250 2275
+	3250 2225 3250 3425
 Wire Wire Line
-	2900 2275 3250 2275
-Wire Wire Line
-	3250 2275 3250 2275
+	3250 2275 2900 2275
 $Comp
 L GND #PWR?
 U 1 1 5A03C280
@@ -431,29 +400,13 @@ F 3 "" H 7900 4125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 2925 7750 2925
+	6800 2925 9300 2925
 Wire Wire Line
-	7750 2925 8000 2925
+	6800 3625 9300 3625
 Wire Wire Line
-	8000 2925 9300 2925
+	6800 3425 9300 3425
 Wire Wire Line
-	6800 3625 7650 3625
-Wire Wire Line
-	7650 3625 8300 3625
-Wire Wire Line
-	8300 3625 9300 3625
-Wire Wire Line
-	6800 3425 7350 3425
-Wire Wire Line
-	7350 3425 7450 3425
-Wire Wire Line
-	7450 3425 9300 3425
-Wire Wire Line
-	6800 2425 7550 2425
-Wire Wire Line
-	7550 2425 7675 2425
-Wire Wire Line
-	7675 2425 9300 2425
+	6800 2425 9300 2425
 $Comp
 L GND #PWR?
 U 1 1 5A03D54B
@@ -838,10 +791,7 @@ F 3 "" H 9325 1325 50  0000 C CNN
 	1    9325 1325
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 3425 3250 2275
-Connection ~ 3250 2275
-Text Label 3150 4675 0    60   ~ 12
+Text Label 3150 4875 0    60   ~ 12
 D-
 Text Label 3150 4775 0    60   ~ 12
 D+
@@ -865,4 +815,10 @@ Text Notes 7700 2075 0    60   ~ 12
 LOAD
 Text Notes 8325 2075 0    60   ~ 12
 LOAD
+Wire Wire Line
+	2550 5175 2650 5175
+Wire Wire Line
+	2600 5175 2600 5200
+Connection ~ 2600 5175
+NoConn ~ 2950 4975
 $EndSCHEMATC
